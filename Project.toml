@@ -1,0 +1,18 @@
+name = "TrimSimpleNonlinearSolve"
+uuid = "e9f1ba72-277b-46fa-85ba-3a9eb7b9828d"
+version = "0.0.1"
+authors = ["Romeo Valentin (romeov@stanford.edu)"]
+
+[deps]
+DifferentiationInterface = "a0c0ee7d-e4b9-4e03-894e-1c5f64a51d63"
+FiniteDiff = "6a86dc24-6348-571c-b903-95158fe2bd41"
+FixedSizeArrays = "3821ddf9-e5b5-40d5-8e25-6813ab96b5e2"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Moshi = "2e0e35c7-a2e4-4343-998d-7ef72827ed2d"
+SimpleNonlinearSolve = "727e6d20-b764-4bd8-a329-72de5adea6c7"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+StructArrays = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
+
+[compat]
+LinearAlgebra = "1.12.0"
