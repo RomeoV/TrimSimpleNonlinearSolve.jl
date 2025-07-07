@@ -16,3 +16,5 @@ It can be compiled with something like
 ``` julia
 julia --project=. --depwarn=error ~/.julia/juliaup/julia-1.12.0-beta4+0.x64.linux.gnu/share/julia/juliac.jl --experimental --trim=unsafe-warn --output-exe main --compile-ccallable --relative-rpath main.jl
 ```
+
+*Currently JET still has a single warning, I'll get to it soon. But the parts are mostly tested to work with trimming.*
