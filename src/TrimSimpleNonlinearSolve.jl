@@ -1,4 +1,4 @@
-module TrimSimpleNonlinearSolve2
+module TrimSimpleNonlinearSolve
 using NonlinearSolveFirstOrder
 using DiffEqBase
 import DiffEqBase.anyeltypedual
