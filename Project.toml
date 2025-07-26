@@ -1,0 +1,22 @@
+name = "TrimSimpleNonlinearSolve2"
+uuid = "ce79173c-e404-40ce-8d4a-c0777d309ff8"
+version = "0.0.1"
+authors = ["Romeo Valentin (romeov@stanford.edu)"]
+
+[deps]
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+LinearSolve = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
+NonlinearSolve = "8913a72c-1f9b-4ce2-8d82-65094dcecaec"
+NonlinearSolveFirstOrder = "5959db7a-ea39-4486-b5fe-2dd0bf03d60d"
+SimpleNonlinearSolve = "727e6d20-b764-4bd8-a329-72de5adea6c7"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[sources]
+ForwardDiff = {path = "/home/romeo/.julia/dev/ForwardDiff"}
+LinearSolve = {path = "/home/romeo/.julia/dev/LinearSolve"}
+
+[compat]
+LinearSolve = "3.23.0"
+NonlinearSolve = "4.10.0"
+NonlinearSolveFirstOrder = "1.6.0"
