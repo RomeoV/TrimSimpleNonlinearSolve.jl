@@ -19,13 +19,13 @@ SimpleNonlinearSolve = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [sources]
-DiffEqBase = {path = "/home/romeo/.julia/dev/DiffEqBase"}
-ForwardDiff = {path = "/home/romeo/.julia/dev/ForwardDiff"}
-LinearSolve = {path = "/home/romeo/.julia/dev/LinearSolve"}
-NonlinearSolveBase = {path = "/home/romeo/Documents/github/NonlinearSolve.jl/lib/NonlinearSolveBase/"}
-Polyester = {path = "/home/romeo/.julia/dev/Polyester"}
-PolyesterWeave = {path = "/home/romeo/.julia/dev/PolyesterWeave"}
-SciMLBase = {path = "/home/romeo/.julia/dev/SciMLBase"}
+DiffEqBase = {path = "./dev/DiffEqBase/"}
+ForwardDiff = {path = "./dev/ForwardDiff/"}
+LinearSolve = {path = "./dev/LinearSolve/"}
+NonlinearSolveBase = {path = "./dev/NonlinearSolveBase/"}
+Polyester = {path = "./dev/Polyester/"}
+PolyesterWeave = {path = "./dev/PolyesterWeave/"}
+SciMLBase = {path = "./dev/SciMLBase/"}
 
 [compat]
 ADTypes = "1.15.0"
