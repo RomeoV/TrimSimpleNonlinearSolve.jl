@@ -19,13 +19,13 @@ SimpleNonlinearSolve = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [sources]
-DiffEqBase = {path = "./dev/DiffEqBase/"}
-ForwardDiff = {path = "./dev/ForwardDiff/"}
-LinearSolve = {path = "./dev/LinearSolve/"}
-NonlinearSolveBase = {path = "./dev/NonlinearSolveBase/"}
-Polyester = {path = "./dev/Polyester/"}
-PolyesterWeave = {path = "./dev/PolyesterWeave/"}
-SciMLBase = {path = "./dev/SciMLBase/"}
+DiffEqBase = {url = "https://github.com/AayushSabharwal/DiffEqBase.jl", rev="as/fix-jet-opt"}
+ForwardDiff = {url = "https://github.com/RomeoV/Polyester.jl", rev="rv/remove-quote-assert-string-interpolation"}
+LinearSolve = {url = "https://github.com/RomeoV/LinearSolve.jl", rev="rv/remove-linsolve-forwarddiff-special-path "}
+NonlinearSolveBase = {url = "http://github.com/RomeoV/NonlinearSolve/", rev="common-defaults-trim", subdir="lib/SciMLBase"}
+Polyester = {url = "https://github.com/RomeoV/Polyester.jl", rev="master"}
+PolyesterWeave = {url = "https://github.com/RomeoV/PolyesterWeave.jl", rev="master"}
+SciMLBase = {url = "https://github.com/AayushSabharwal/SciMLBase.jl", rev="as/fix-jet-opt"}
 
 [compat]
 ADTypes = "1.15.0"
