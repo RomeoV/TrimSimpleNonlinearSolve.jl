@@ -1,6 +1,6 @@
 name = "TrimSimpleNonlinearSolve"
 uuid = "88f12c70-c77b-43dc-9acd-58dca821fc02"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Romeo Valentin (romeov@stanford.edu)"]
 
 [deps]
