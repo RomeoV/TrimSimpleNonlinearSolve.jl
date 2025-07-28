@@ -20,11 +20,11 @@ StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [sources]
 DiffEqBase = {url = "https://github.com/AayushSabharwal/DiffEqBase.jl", rev="as/fix-jet-opt"}
-ForwardDiff = {url = "https://github.com/RomeoV/Polyester.jl", rev="rv/remove-quote-assert-string-interpolation"}
-LinearSolve = {url = "https://github.com/RomeoV/LinearSolve.jl", rev="rv/remove-linsolve-forwarddiff-special-path "}
-NonlinearSolveBase = {url = "http://github.com/RomeoV/NonlinearSolve/", rev="common-defaults-trim", subdir="lib/SciMLBase"}
+ForwardDiff = {url = "https://github.com/RomeoV/ForwardDiff.jl", rev="rv/remove-quote-assert-string-interpolation"}
+LinearSolve = {url = "https://github.com/RomeoV/LinearSolve.jl", rev="rv/remove-linsolve-forwarddiff-special-path"}
+NonlinearSolveBase = {url = "http://github.com/RomeoV/NonlinearSolve.jl", rev="common-defaults-trim", subdir="lib/NonlinearSolveBase"}
 Polyester = {url = "https://github.com/RomeoV/Polyester.jl", rev="master"}
-PolyesterWeave = {url = "https://github.com/RomeoV/PolyesterWeave.jl", rev="master"}
+PolyesterWeave = {url = "https://github.com/RomeoV/PolyesterWeave.jl", rev="main"}
 SciMLBase = {url = "https://github.com/AayushSabharwal/SciMLBase.jl", rev="as/fix-jet-opt"}
 
 [compat]

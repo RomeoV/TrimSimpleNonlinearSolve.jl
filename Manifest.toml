@@ -225,7 +225,7 @@ version = "1.11.0"
 
 [[deps.DiffEqBase]]
 deps = ["ArrayInterface", "ConcreteStructs", "DataStructures", "DocStringExtensions", "EnumX", "EnzymeCore", "FastBroadcast", "FastClosures", "FastPower", "FunctionWrappers", "FunctionWrappersWrappers", "LinearAlgebra", "Logging", "Markdown", "MuladdMacro", "Parameters", "PrecompileTools", "Printf", "RecursiveArrayTools", "Reexport", "SciMLBase", "SciMLOperators", "SciMLStructures", "Setfield", "Static", "StaticArraysCore", "Statistics", "SymbolicIndexingInterface", "TruncatedStacktraces"]
-path = "./dev/DiffEqBase/"
+git-tree-sha1 = "c3e66b344e41e7eb24fd24adc14f20b19d0ab6cb"
 repo-rev = "as/fix-jet-opt"
 repo-url = "https://github.com/AayushSabharwal/DiffEqBase.jl"
 uuid = "2b5f629d-d688-5b77-993f-72d75c75574e"
@@ -440,9 +440,9 @@ version = "2.27.0"
 
 [[deps.ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "LinearAlgebra", "LogExpFunctions", "NaNMath", "Preferences", "Printf", "Random", "SpecialFunctions"]
-path = "./dev/ForwardDiff/"
+git-tree-sha1 = "630ab3aa951377daf3343bea6565ac5cc5c632ed"
 repo-rev = "rv/remove-quote-assert-string-interpolation"
-repo-url = "https://github.com/RomeoV/Polyester.jl"
+repo-url = "https://github.com/RomeoV/ForwardDiff.jl"
 uuid = "f6369f11-7733-5829-9624-2563aa707210"
 version = "1.0.1"
 weakdeps = ["StaticArrays"]
@@ -616,8 +616,8 @@ version = "1.12.0"
 
 [[deps.LinearSolve]]
 deps = ["ArrayInterface", "ChainRulesCore", "ConcreteStructs", "DocStringExtensions", "EnumX", "GPUArraysCore", "InteractiveUtils", "Krylov", "LazyArrays", "Libdl", "LinearAlgebra", "MKL_jll", "Markdown", "PrecompileTools", "Preferences", "RecursiveArrayTools", "Reexport", "SciMLBase", "SciMLOperators", "Setfield", "StaticArraysCore", "UnPack"]
-path = "./dev/LinearSolve/"
-repo-rev = "rv/remove-linsolve-forwarddiff-special-path "
+git-tree-sha1 = "5fe888037756193c65518b15b8350f50889eee6f"
+repo-rev = "rv/remove-linsolve-forwarddiff-special-path"
 repo-url = "https://github.com/RomeoV/LinearSolve.jl"
 uuid = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
 version = "3.23.0"
@@ -770,10 +770,10 @@ version = "4.10.0"
 
 [[deps.NonlinearSolveBase]]
 deps = ["ADTypes", "Adapt", "ArrayInterface", "CommonSolve", "Compat", "ConcreteStructs", "DifferentiationInterface", "EnzymeCore", "FastClosures", "LinearAlgebra", "Markdown", "MaybeInplace", "Preferences", "Printf", "RecursiveArrayTools", "SciMLBase", "SciMLJacobianOperators", "SciMLOperators", "StaticArraysCore", "SymbolicIndexingInterface", "TimerOutputs"]
-path = "./dev/NonlinearSolveBase/"
+git-tree-sha1 = "eb44a3ea2e2fc89482ded42fbeca4c7188201990"
 repo-rev = "common-defaults-trim"
-repo-subdir = "lib/SciMLBase"
-repo-url = "http://github.com/RomeoV/NonlinearSolve/"
+repo-subdir = "lib/NonlinearSolveBase"
+repo-url = "http://github.com/RomeoV/NonlinearSolve.jl"
 uuid = "be0214bd-f91f-a760-ac4e-3421ce2b2da0"
 version = "1.13.0"
 
@@ -866,7 +866,7 @@ version = "1.13.0"
 
 [[deps.Polyester]]
 deps = ["ArrayInterface", "BitTwiddlingConvenienceFunctions", "IfElse", "ManualMemory", "PolyesterWeave", "Static", "StaticArrayInterface", "StrideArraysCore", "ThreadingUtilities"]
-path = "./dev/Polyester/"
+git-tree-sha1 = "f7e2dee1808fd7cf838afa19f29244215bbb3698"
 repo-rev = "master"
 repo-url = "https://github.com/RomeoV/Polyester.jl"
 uuid = "f517fe37-dbe3-4b94-8317-1923a5111588"
@@ -874,8 +874,8 @@ version = "0.7.18"
 
 [[deps.PolyesterWeave]]
 deps = ["BitTwiddlingConvenienceFunctions", "IfElse", "Static", "ThreadingUtilities"]
-path = "./dev/PolyesterWeave/"
-repo-rev = "master"
+git-tree-sha1 = "43fed5592ae1edfd7904d2add232ca355b7df125"
+repo-rev = "main"
 repo-url = "https://github.com/RomeoV/PolyesterWeave.jl"
 uuid = "1d0040c9-8b98-4ee7-8388-3f51789ca0ad"
 version = "0.2.2"
@@ -972,7 +972,7 @@ version = "0.1.0"
 
 [[deps.SciMLBase]]
 deps = ["ADTypes", "Accessors", "Adapt", "ArrayInterface", "CommonSolve", "ConstructionBase", "Distributed", "DocStringExtensions", "EnumX", "FunctionWrappersWrappers", "IteratorInterfaceExtensions", "LinearAlgebra", "Logging", "Markdown", "Moshi", "PrecompileTools", "Preferences", "Printf", "RecipesBase", "RecursiveArrayTools", "Reexport", "RuntimeGeneratedFunctions", "SciMLOperators", "SciMLStructures", "StaticArraysCore", "Statistics", "SymbolicIndexingInterface"]
-path = "./dev/SciMLBase/"
+git-tree-sha1 = "e19a321e941658fdcdf37230767f5d6ef3074acf"
 repo-rev = "as/fix-jet-opt"
 repo-url = "https://github.com/AayushSabharwal/SciMLBase.jl"
 uuid = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
@@ -1202,7 +1202,7 @@ version = "0.5.29"
 deps = ["ADTypes", "DiffEqBase", "ForwardDiff", "LinearAlgebra", "LinearSolve", "NonlinearSolve", "NonlinearSolveBase", "NonlinearSolveFirstOrder", "Polyester", "PolyesterWeave", "SciMLBase", "SimpleNonlinearSolve", "StaticArrays"]
 path = "."
 uuid = "88f12c70-c77b-43dc-9acd-58dca821fc02"
-version = "0.0.1"
+version = "0.1.0"
 
 [[deps.TruncatedStacktraces]]
 deps = ["InteractiveUtils", "MacroTools", "Preferences"]
