@@ -19,7 +19,6 @@ SimpleNonlinearSolve = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [sources]
-DiffEqBase = {url = "https://github.com/AayushSabharwal/DiffEqBase.jl", rev="as/fix-jet-opt"}
 ForwardDiff = {url = "https://github.com/RomeoV/ForwardDiff.jl", rev="rv/remove-quote-assert-string-interpolation"}
 LinearSolve = {url = "https://github.com/RomeoV/LinearSolve.jl", rev="rv/remove-linsolve-forwarddiff-special-path"}
 NonlinearSolveBase = {url = "http://github.com/RomeoV/NonlinearSolve.jl", rev="common-defaults-trim", subdir="lib/NonlinearSolveBase"}
@@ -29,6 +28,7 @@ SciMLBase = {url = "https://github.com/AayushSabharwal/SciMLBase.jl", rev="as/fi
 
 [compat]
 ADTypes = "1.15.0"
+DiffEqBase = "6.179.0"
 LinearSolve = "3.23.0"
 NonlinearSolve = "4.10.0"
 NonlinearSolveFirstOrder = "1.6.0"
