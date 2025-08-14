@@ -8,6 +8,8 @@ using LinearAlgebra
 using StaticArrays
 using LinearSolve
 import SciMLBase
+using SciMLBase: ReturnCode
+using EnumX
 const LS = LinearSolve
 function f(u, p)
     L, U = cholesky(p.Σ)
@@ -15,7 +17,8 @@ function f(u, p)
     # linprob = LinearProblem(Matrix(L), rhs)
     # alg = LS.GenericLUFactorization()
     # sol = LinearSolve.solve(linprob, alg)
-    return L' * rhs
+    # return L' * rhs
+    return rhs
 end
 
 struct MyParams{T, M}
@@ -27,9 +30,11 @@ end
 const autodiff = AutoForwardDiff(; chunksize = 1)
 # const alg = TrustRegion(; autodiff, linsolve = LS.CholeskyFactorization())
 const alg = LevenbergMarquardt(; autodiff, linsolve = LS.CholeskyFactorization())
+const prob = NonlinearLeastSquaresProblem{false}(f, rand(2), MyParams(rand(), hermitianpart(rand(2,2)+2I)))
+# const cache = init(prob, alg)
 
 function minimize(x, n)
-    prob = NonlinearLeastSquaresProblem{false}(f, rand(n), MyParams(rand(), hermitianpart(rand(n, n) + 2I)))
+    # prob = NonlinearLeastSquaresProblem{false}(f, rand(n), MyParams(rand(), hermitianpart(rand(n, n) + 2I)))
     cache = init(prob, alg)
     ps = MyParams(x, hermitianpart(rand(n, n) + 2I))
     reinit!(cache, rand(n); p = ps)
@@ -39,6 +44,8 @@ end
 
 function minimize_nocache(x, n)
     prob = NonlinearLeastSquaresProblem{false}(f, rand(n), MyParams(rand(), hermitianpart(rand(n, n) + 2I)))
-    return sol = solve(prob, alg)
+    sol = solve(prob, alg)
+    println(Core.stdout, sol.retcode)
+    return sol
 end
 end # module TrimSimpleNonlinearSolve
