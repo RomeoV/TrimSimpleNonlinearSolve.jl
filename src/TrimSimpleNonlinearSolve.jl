@@ -16,7 +16,16 @@ const alg = LevenbergMarquardt(; autodiff, linsolve=CholeskyFactorization())
 const prob = NonlinearLeastSquaresProblem{false}(f, rand(2), MyParams(rand()))
 
 function minimize(x)
-    cache = init(prob, alg; p=MyParams(x))
+    # inlined and simplified version of
+    # ````
+    # cache = init(prob, alg; p=MyParams(x))
+    # ````
+    cache = let u0 = prob.u0, p = prob.p
+        _prob = NonlinearSolveFirstOrder.DiffEqBase.get_concrete_problem(prob, false; u0=u0, p=p)
+        _alg = NonlinearSolveFirstOrder.DiffEqBase.prepare_alg(alg, _prob.u0, _prob.p, _prob)
+        NonlinearSolveFirstOrder.DiffEqBase.init_call(_prob, _alg)
+    end
+
     solve!(cache)
     return cache.u
 end
