@@ -6,7 +6,8 @@ function @main(argv::Vector{String})::Cint
     catch
         parse(Float64, argv[2])
     end
-    sol = TrimSimpleNonlinearSolve.minimize(λ)
+    # sol = TrimSimpleNonlinearSolve.minimize(λ)
+    sol = TrimSimpleNonlinearSolve.minimize_nocache(λ)
     # sol = TrimSimpleNonlinearSolve2.minimize_static(λ)
     println(Core.stdout, sum(sol))
     return 0

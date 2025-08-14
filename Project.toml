@@ -21,10 +21,6 @@ ForwardDiff = {url = "https://github.com/RomeoV/ForwardDiff.jl", rev="rv/remove-
 # Remove special path code path for ForwarDiff of LinearSolve, which uses untrimmable `deepcopy`.
 # Use of `deepcopy` is tracked at https://github.com/SciML/LinearSolve.jl/issues/648.
 LinearSolve = {url = "https://github.com/RomeoV/LinearSolve.jl", rev="rv/remove-linsolve-forwarddiff-special-path"}
-# Remove use of CPUSummary which segfaults trimmed binary. Tracked at https://github.com/JuliaSIMD/Polyester.jl/pull/163.
-Polyester = {url = "https://github.com/RomeoV/Polyester.jl", rev="master"}
-# Remove use of CPUSummary which segfaults trimmed binary. Tracked at https://github.com/JuliaSIMD/PolyesterWeave.jl/pull/28
-PolyesterWeave = {url = "https://github.com/RomeoV/PolyesterWeave.jl", rev="main"}
 # Fix a type instability. Tracked at https://github.com/SciML/SciMLBase.jl/pull/1074.
 SciMLBase = {url = "https://github.com/AayushSabharwal/SciMLBase.jl", rev="as/fix-jet-opt"}
 
