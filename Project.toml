@@ -5,27 +5,12 @@ authors = ["Romeo Valentin (romeov@stanford.edu)"]
 
 [deps]
 ADTypes = "47edcb42-4c32-4615-8424-f2b9edc5f35b"
-DiffEqBase = "2b5f629d-d688-5b77-993f-72d75c75574e"
-EnumX = "4e289a0a-7415-4d19-859d-a7e5c4648b56"
 ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
-LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 LinearSolve = "7ed4a6bd-45f5-4d41-b270-4a48e9bafcae"
-NonlinearSolveBase = "be0214bd-f91f-a760-ac4e-3421ce2b2da0"
 NonlinearSolveFirstOrder = "5959db7a-ea39-4486-b5fe-2dd0bf03d60d"
-SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
-StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-
-[sources]
-ForwardDiff = {rev = "rv/remove-quote-assert-string-interpolation", url = "https://github.com/RomeoV/ForwardDiff.jl"}
-LinearSolve = {rev = "rv/remove-linsolve-forwarddiff-special-path", url = "https://github.com/RomeoV/LinearSolve.jl"}
-NonlinearSolveBase = {path = "/home/romeo/Documents/github/NonlinearSolve.jl/lib/NonlinearSolveBase"}
-NonlinearSolveFirstOrder = {path = "/home/romeo/Documents/github/NonlinearSolve.jl/lib/NonlinearSolveFirstOrder"}
-SciMLBase = {path = "/home/romeo/.julia/dev/SciMLBase"}
 
 [compat]
-ADTypes = "1.15.0"
-DiffEqBase = "6.179.0"
-EnumX = "1.0.5"
-LinearAlgebra = "1.12.0"
-NonlinearSolveFirstOrder = "1.6.0"
-StaticArrays = "1.9.0"
+ADTypes = "^1.15.0"
+ForwardDiff = "1"
+LinearSolve = "3"
+NonlinearSolveFirstOrder = "^1.6.0"
